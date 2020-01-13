@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg" />
+    <img src="../statics/earthday.jpg" style="width:70%; height:70%;">
   </q-page>
 </template>
 

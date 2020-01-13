@@ -1,6 +1,6 @@
 {
-  "name": "quasar_boid_learn",
-  "version": "0.0.1",
+  "name": "boid-learn",
+  "version": "0.0.2",
   "description": "Learn and Earn with Boid",
   "productName": "Boid Learn",
   "cordovaId": "org.cordova.quasar.app",
@@ -8,6 +8,8 @@
   "author": "I_Seth <mchosc@animusystems.com>",
   "private": true,
   "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build && cp _redirects dist/spa",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0"
   },

@@ -46,10 +46,18 @@
         </q-item>
         
 
-
-
       <q-list>
         <q-item-label header>Essential Boid Links</q-item-label>
+
+<q-item clickable tag="a" target="_blank" href="https://boid.com">
+          <q-item-section avatar>
+            <q-icon name="img:statics/boid-logo.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Main Site</q-item-label>
+          </q-item-section>
+</q-item>
+
         <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
           <q-item-section avatar>
             <q-icon name="img:statics/icons/documents.svg" />
@@ -59,6 +67,24 @@
           </q-item-section>
         </q-item>
         
+        <q-item clickable tag="a" target="_blank" href="https://community.boid.com">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/handshake.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Community site</q-item-label>
+          </q-item-section>
+        </q-item>
+
+<q-item clickable tag="a" target="_blank" href="https://stats.boid.com">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/stats.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Statistics</q-item-label>
+          </q-item-section>
+</q-item>
+
         <q-item
           clickable
           tag="a"
@@ -72,6 +98,24 @@
             <q-item-label>Github</q-item-label>
           </q-item-section>
         </q-item>
+
+<q-item clickable tag="a" target="_blank" href="https://bloks.io/account/boidcomtoken?loadContract=true&tab=Actions&account=boidcomtoken">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/bloks-io-logo-vector.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Token contract</q-item-label>
+          </q-item-section>
+</q-item>
+
+<q-item clickable tag="a" target="_blank" href="https://t.me/Boidcom_official">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/telegram.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Telegram channel</q-item-label>
+          </q-item-section>
+</q-item>
 
         <q-item
           clickable
@@ -87,19 +131,7 @@
           </q-item-section>
         </q-item>
         
-        <q-item
-          clickable
-          tag="a"
-          target="_blank"
-          href="https://community.boid.com"
-        >
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/handshake.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Community site</q-item-label>
-          </q-item-section>
-        </q-item>
+        
         <q-item
           clickable
           tag="a"
@@ -136,15 +168,6 @@
           </q-item-section>
 </q-item>
 
-<q-item clickable tag="a" target="_blank" href="https://t.me/Boidcom_official">
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/telegram.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Telegram channel</q-item-label>
-          </q-item-section>
-</q-item>
-
 <q-item clickable tag="a" target="_blank" href="https://everipedia.org/wiki/lang_en/boid-1">
           <q-item-section avatar>
             <q-icon name="img:statics/icons/everipedia.svg" />
@@ -153,21 +176,8 @@
             <q-item-label>Everipedia</q-item-label>
           </q-item-section>
 </q-item>
-<q-item clickable tag="a" target="_blank" href="https://bloks.io/account/boidcomtoken?loadContract=true&tab=Actions&account=boidcomtoken">
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/bloks-io-logo-vector.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Token contract</q-item-label>
-          </q-item-section>
-</q-item><q-item clickable tag="a" target="_blank" href="https://stats.boid.com">
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/stats.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Statistics</q-item-label>
-          </q-item-section>
-</q-item><q-item clickable tag="a" target="_blank" href="https://www.worldcommunitygrid.org/stat/viewMemberInfo.do?userName=boid.com">
+
+<q-item clickable tag="a" target="_blank" href="https://www.worldcommunitygrid.org/stat/viewMemberInfo.do?userName=boid.com">
           <q-item-section avatar>
             <q-icon name="img:statics/icons/wcg-logo.svg" />
           </q-item-section>
@@ -181,14 +191,9 @@
           <q-item-section>
             <q-item-label>Token highest holders</q-item-label>
           </q-item-section>
-</q-item><q-item clickable tag="a" target="_blank" href="https://boid.com">
-          <q-item-section avatar>
-            <q-icon name="img:statics/boid-logo.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Main Site</q-item-label>
-          </q-item-section>
-</q-item><q-item clickable tag="a" target="_blank" href="https://bloks.io/account/boidworkfund">
+</q-item>
+
+<q-item clickable tag="a" target="_blank" href="https://bloks.io/account/boidworkfund">
           <q-item-section avatar>
             <q-icon name="img:statics/icons/token-more.svg" />
           </q-item-section>

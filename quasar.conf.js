@@ -168,7 +168,7 @@ module.exports = function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'quasar_boid_learn'
+        appId: 'boid-learn'
       },
 
       // keep in sync with /src-electron/main-process/electron-main

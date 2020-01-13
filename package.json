@@ -17,7 +17,9 @@
     "@quasar/extras": "^1.0.0",
     "axios": "^0.18.1",
     "quasar": "^1.0.0",
-    "vue-i18n": "^8.0.0"
+    "vue-i18n": "^8.0.0",
+    "vue-markdown": "^2.2.4",
+    "vuejs-localization": "^1.0.3"
   },
   "devDependencies": {
     "@quasar/app": "^1.0.0",
@@ -25,7 +27,9 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
     "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^5.0.0"
+    "eslint-plugin-vue": "^5.0.0",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0"
   },
   "engines": {
     "node": ">= 8.9.0",

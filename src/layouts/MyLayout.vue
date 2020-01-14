@@ -17,7 +17,7 @@
             <img src="../statics/boid-logo-white.svg" style="width:7%; height:7%;">
           
         </q-toolbar-title>
-<q-px-lg-toolbar-title>LEARN AND EARN</q-px-lg-toolbar-title>
+<q-px-lg-toolbar-title class="boid-font-lg">LEARN AND EARN</q-px-lg-toolbar-title>
       </q-toolbar>
 
     </q-header>
@@ -27,8 +27,9 @@
       show-if-above
       bordered
       content-class="bg-grey-2"
+      class="boid-font-md"
     >
-      <q-list><q-item-label header>Learn and Earn</q-item-label></q-list>
+      <q-list><q-item-label header><b>Learn and Earn</b></q-item-label></q-list>
       <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
           <q-item-section avatar>
             <q-icon name="img:statics/icons/school.svg" />
@@ -48,7 +49,7 @@
         
 
       <q-list>
-        <q-item-label header>Essential Boid Links</q-item-label>
+        <q-item-label header><b>Essential Boid Links</b></q-item-label>
 
 <q-item clickable tag="a" target="_blank" href="https://boid.com">
           <q-item-section avatar>
@@ -114,7 +115,7 @@
             <q-icon name="img:statics/icons/telegram.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Telegram channel</q-item-label>
+            <q-item-label>Telegram</q-item-label>
           </q-item-section>
 </q-item>
 
@@ -128,7 +129,7 @@
             <q-icon name="img:statics/icons/discord.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Discord channel</q-item-label>
+            <q-item-label>Discord</q-item-label>
           </q-item-section>
         </q-item>
         

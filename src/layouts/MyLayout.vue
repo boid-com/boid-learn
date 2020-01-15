@@ -13,7 +13,7 @@
         />
 
         <q-toolbar-title>
-           <img src="../statics/boid-logo-white.svg" style="width:7%; height:7%;">
+           <q-item active clickable v-ripple tag="a" href="./"><img src="../statics/boid-logo-white.svg" style="width:7%; height:7%;"></q-item>
         </q-toolbar-title>
 
         <q-px-md-toolbar-title
@@ -211,7 +211,7 @@
 
     <q-drawer show-if-above v-model="right" side="right" bordered class="boid-font-md">
       
-            <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
+            <q-item clickable tag="a" href="./#/learn">
               <q-item-section avatar>
                 <q-icon name="img:statics/icons/school.svg" />
               </q-item-section>

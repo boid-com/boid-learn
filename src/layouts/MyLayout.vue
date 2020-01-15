@@ -1,62 +1,61 @@
 <template>
+  <q-layout view="hHh lpR lFr">
 
-  <q-layout view="hHh lpr lfr">
-    <q-header elevated>
+    <q-header elevated class="bg-primary text-white">
       <q-toolbar>
         <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          icon="menu"
-          aria-label="Menu"
-       />
-       
-       <q-toolbar-title>
-          
-            <img src="../statics/boid-logo-white.svg" style="width:7%; height:7%;">
-          
-        </q-toolbar-title>
-<q-px-lg-toolbar-title class="boid-font-lg">LEARN AND EARN</q-px-lg-toolbar-title>
-      </q-toolbar>
+              dense
+              flat
+              round
+              icon="menu"
+              @click="left = !left"
+              aria-label="Menu"
+        />
 
+        <q-toolbar-title>
+           <img src="../statics/boid-logo-white.svg" style="width:7%; height:7%;">
+        </q-toolbar-title>
+
+        <q-px-md-toolbar-title
+          on-left
+          class="boid-font-lg">
+            LEARN AND EARN
+        </q-px-md-toolbar-title>
+
+      <q-btn
+         dense
+         flat
+         round
+         icon="menu"
+         @click="right = !right" />
+      
+      </q-toolbar>
+    
     </q-header>
 
     <q-drawer
-      v-model="leftDrawerOpen"
+      v-model="left"
       show-if-above
+      
+      :mini="miniState"
+      @mouseover="miniState = false"
+      @mouseout="miniState = true"
+      :width="260"
+      :breakpoint="500"
       bordered
-      content-class="bg-grey-2"
       class="boid-font-md"
-    >
-      <q-list><q-item-label header><b>Learn and Earn</b></q-item-label></q-list>
-      <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/school.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Learn</q-item-label>
-          </q-item-section>
-        </q-item>
-      <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/boid-bird.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Specials</q-item-label>
-          </q-item-section>
-        </q-item>
-        
-
-      <q-list>
-        <q-item-label header><b>Essential Boid Links</b></q-item-label>
-
-<q-item clickable tag="a" target="_blank" href="https://boid.com">
+      >
+     
+     <q-scroll-area class="fit">
+     <q-list padding>
+       
+        <q-item active clickable v-ripple tag="a" target="_blank" href="https://boid.com">
           <q-item-section avatar>
             <q-icon name="img:statics/boid-logo.svg" />
           </q-item-section>
-          <q-item-section>
-            <q-item-label>Main Site</q-item-label>
+        <q-item-label>Main Site</q-item-label>
+        <q-item-section>
+            
           </q-item-section>
 </q-item>
 
@@ -205,25 +204,49 @@
 </q-item>
 
       </q-list>
+</q-scroll-area>      
+
+    
+    </q-drawer>
+
+    <q-drawer show-if-above v-model="right" side="right" bordered class="boid-font-md">
+      
+            <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
+              <q-item-section avatar>
+                <q-icon name="img:statics/icons/school.svg" />
+              </q-item-section>
+          
+          <q-item-section>
+            <q-item-label>Learn</q-item-label>
+          </q-item-section>
+        </q-item>
+      <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/boid-bird.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Specials</q-item-label>
+          </q-item-section>
+        </q-item>
       
       <q-list><q-item-label header>“YOU DON’T HAVE TO BE GREAT TO START, BUT YOU HAVE TO START TO BE GREAT.” – ZIG ZIGLAR</q-item-label></q-list>
-    
     </q-drawer>
 
     <q-page-container>
       <router-view />
     </q-page-container>
+
   </q-layout>
 </template>
 
 <script>
 export default {
-  name: "MyLayout",
-
-  data() {
+  data () {
     return {
-      leftDrawerOpen: true
-    };
+      left: false,
+      right: false,
+      miniState: true
+    }
   }
-};
+}
 </script>

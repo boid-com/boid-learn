@@ -1,42 +1,64 @@
 <template>
-  <q-layout view="hHh lpR lFr">
+  <q-layout view="hHh lpR lfr">
 
-    <q-header elevated class="bg-primary text-white">
+    <q-header reveal elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
-        <q-btn
-              dense
-              flat
-              round
-              icon="menu"
-              @click="left = !left"
-              aria-label="Menu"
-        />
-
+        <q-btn dense flat round icon="home" @click="$router.push('./')" />
+        
         <q-toolbar-title>
-           <q-item active clickable v-ripple tag="a" href="./"><img src="../statics/boid-logo-white.svg" style="width:7%; height:7%;"></q-item>
+        <img src="../statics/boid-logo-white.svg" style="width:5%; height:5%;">
         </q-toolbar-title>
 
-        <q-px-md-toolbar-title
-          on-left
-          class="boid-font-lg">
-            LEARN AND EARN
-        </q-px-md-toolbar-title>
+<div class="q-pa-md">
+    <q-btn-dropdown color="primary" label="Learn">
+      <q-list>
+        <q-item clickable v-close-popup @click="onItemClick" to="./learn">
+          <q-item-section>
+            <q-item-label>Basic</q-item-label>
+          </q-item-section>
+        </q-item>
 
-      <q-btn
-         dense
-         flat
-         round
-         icon="menu"
-         @click="right = !right" />
-      
+        <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section>
+            <q-item-label>Advanced (Soon!)</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section>
+            <q-item-label>Professional (Soon!)</q-item-label>
+          </q-item-section>
+        </q-item>
+      </q-list>
+    </q-btn-dropdown>
+  </div>
+
+<div class="q-pa-md">
+    <q-btn-dropdown color="primary" label="Specials">
+      <q-list>
+        <q-item clickable v-close-popup @click="onItemClick" to="./">
+          <q-item-section>
+            <q-item-label>EarthDay2020</q-item-label>
+          </q-item-section>
+        </q-item>
+        
+      </q-list>
+    </q-btn-dropdown>
+  </div>
+
+   <q-btn dense flat round icon="menu" @click="right = !right" aria-label="Menu"/>
       </q-toolbar>
-    
-    </q-header>
+
+
+
+
+   </q-header>
 
     <q-drawer
-      v-model="left"
-      show-if-above
-      
+      v-model="right"
+      side="right"
+      overlay
+      show-if-above      
       :mini="miniState"
       @mouseover="miniState = false"
       @mouseout="miniState = true"
@@ -44,7 +66,7 @@
       :breakpoint="500"
       bordered
       class="boid-font-md"
-      >
+    >
      
      <q-scroll-area class="fit">
      <q-list padding>
@@ -209,29 +231,7 @@
     
     </q-drawer>
 
-    <q-drawer show-if-above v-model="right" side="right" bordered class="boid-font-md">
-      
-            <q-item clickable tag="a" href="./#/learn">
-              <q-item-section avatar>
-                <q-icon name="img:statics/icons/school.svg" />
-              </q-item-section>
-          
-          <q-item-section>
-            <q-item-label>Learn</q-item-label>
-          </q-item-section>
-        </q-item>
-      <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/boid-bird.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Specials</q-item-label>
-          </q-item-section>
-        </q-item>
-      
-      <q-list><q-item-label header>“YOU DON’T HAVE TO BE GREAT TO START, BUT YOU HAVE TO START TO BE GREAT.” – ZIG ZIGLAR</q-item-label></q-list>
-    </q-drawer>
-
+  
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -243,7 +243,6 @@
 export default {
   data () {
     return {
-      left: false,
       right: false,
       miniState: true
     }

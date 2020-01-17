@@ -1,7 +1,7 @@
 const routes = [
   {path: "/", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/Index.vue") }]},
-  {path: "/learn", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/Learn.vue") }]},
-  {path: "/specials", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/Specials.vue") }]}
+  {path: "/learn-basic-level-1", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/learn-basic-level-1.vue") }]},
+  {path: "/special-earthday2020", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/special-earthday2020.vue") }]}
 ];
 
 // Always leave this as last one

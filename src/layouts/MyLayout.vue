@@ -1,20 +1,15 @@
 <template>
   <q-layout view="hHh lpR lfr">
 
-    <q-header reveal elevated class="bg-primary text-white" height-hint="98">
-      <q-toolbar>
-        <q-btn dense flat round icon="home" @click="$router.push('./')" />
-        
-        <q-toolbar-title>
-        <img src="../statics/boid-logo-white.svg" style="width:5%; height:5%;">
-        </q-toolbar-title>
-
-<div class="q-pa-md">
-    <q-btn-dropdown color="primary" label="Learn">
+    <q-header reveal elevated class="flex flex-center column bg-primary text-white">
+      <q-toolbar class="row justify-start items-center content-center">
+                <q-btn style="overflow: auto;" color="primary" clickable @click="$router.push('./')" icon="img:statics/icons/boid-bird.svg" label="HOME"></q-btn>
+                
+    <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="primary" label="Learn">
       <q-list>
         <q-item clickable v-close-popup @click="onItemClick" to="./learn">
           <q-item-section>
-            <q-item-label>Basic</q-item-label>
+            <q-item-label.boid-font-sm>Basic</q-item-label.boid-font-sm>
           </q-item-section>
         </q-item>
 
@@ -31,10 +26,10 @@
         </q-item>
       </q-list>
     </q-btn-dropdown>
-  </div>
 
-<div class="q-pa-md">
-    <q-btn-dropdown color="primary" label="Specials">
+
+
+    <q-btn-dropdown style="overflow: auto;" color="primary" label="Specials">
       <q-list>
         <q-item clickable v-close-popup @click="onItemClick" to="./">
           <q-item-section>
@@ -44,92 +39,20 @@
         
       </q-list>
     </q-btn-dropdown>
-  </div>
 
-   <q-btn dense flat round icon="menu" @click="right = !right" aria-label="Menu"/>
-      </q-toolbar>
+   
 
-
-
-
-   </q-header>
-
-    <q-drawer
-      v-model="right"
-      side="right"
-      overlay
-      show-if-above      
-      :mini="miniState"
-      @mouseover="miniState = false"
-      @mouseout="miniState = true"
-      :width="260"
-      :breakpoint="500"
-      bordered
-      class="boid-font-md"
-    >
-     
-     <q-scroll-area class="fit">
-     <q-list padding>
-       
-        <q-item active clickable v-ripple tag="a" target="_blank" href="https://boid.com">
-          <q-item-section avatar>
-            <q-icon name="img:statics/boid-logo.svg" />
-          </q-item-section>
-        <q-item-label>Main Site</q-item-label>
-        <q-item-section>
-            
-          </q-item-section>
-</q-item>
-
-        <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/documents.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Documentation site</q-item-label>
-          </q-item-section>
-        </q-item>
+    <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="primary" label="SOCIAL">
+      <q-list>        
         
         <q-item clickable tag="a" target="_blank" href="https://community.boid.com">
           <q-item-section avatar>
             <q-icon name="img:statics/icons/handshake.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Community site</q-item-label>
+            <q-item-label>Community</q-item-label>
           </q-item-section>
         </q-item>
-
-<q-item clickable tag="a" target="_blank" href="https://stats.boid.com">
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/stats.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Statistics</q-item-label>
-          </q-item-section>
-</q-item>
-
-        <q-item
-          clickable
-          tag="a"
-          target="_blank"
-          href="https://github.com/boid-com"
-        >
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/github.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Github</q-item-label>
-          </q-item-section>
-        </q-item>
-
-<q-item clickable tag="a" target="_blank" href="https://bloks.io/account/boidcomtoken?loadContract=true&tab=Actions&account=boidcomtoken">
-          <q-item-section avatar>
-            <q-icon name="img:statics/icons/bloks-io-logo-vector.svg" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Token contract</q-item-label>
-          </q-item-section>
-</q-item>
 
 <q-item clickable tag="a" target="_blank" href="https://t.me/Boidcom_official">
           <q-item-section avatar>
@@ -168,6 +91,7 @@
             <q-item-label>Twitter</q-item-label>
           </q-item-section>
         </q-item>
+        
         <q-item
           clickable
           tag="a"
@@ -187,10 +111,69 @@
             <q-icon name="img:statics/icons/youtube.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Youtube channel</q-item-label>
+            <q-item-label>Youtube</q-item-label>
           </q-item-section>
 </q-item>
+      </q-list>
+    </q-btn-dropdown>
 
+
+
+
+
+    <q-btn-dropdown style="overflow: auto;" color="primary" label="LINKS">
+      <q-list>        
+
+        <q-item clickable tag="a" target="_blank" href="https://app.boid.com">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/boid-bird.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>APP Web</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/documents.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Documentation</q-item-label>
+          </q-item-section>
+        </q-item>
+        
+<q-item clickable tag="a" target="_blank" href="https://stats.boid.com">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/stats.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Statistics</q-item-label>
+          </q-item-section>
+</q-item>
+<q-separator spaced />
+        <q-item
+          clickable
+          tag="a"
+          target="_blank"
+          href="https://github.com/boid-com"
+        >
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/github.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Github</q-item-label>
+          </q-item-section>
+        </q-item>
+
+<q-item clickable tag="a" target="_blank" href="https://bloks.io/account/boidcomtoken?loadContract=true&tab=Actions&account=boidcomtoken">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/bloks-io-logo-vector.svg" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Token contract</q-item-label>
+          </q-item-section>
+</q-item>
+<q-separator spaced />
 <q-item clickable tag="a" target="_blank" href="https://everipedia.org/wiki/lang_en/boid-1">
           <q-item-section avatar>
             <q-icon name="img:statics/icons/everipedia.svg" />
@@ -207,12 +190,14 @@
           <q-item-section>
             <q-item-label>WCG stats</q-item-label>
           </q-item-section>
-</q-item><q-item clickable tag="a" target="_blank" href="https://bloks.io/tokens/BOID-eos-boidcomtoken">
+</q-item>
+<q-separator spaced />
+<q-item clickable tag="a" target="_blank" href="https://bloks.io/tokens/BOID-eos-boidcomtoken">
           <q-item-section avatar>
             <q-icon name="img:statics/icons/token.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Token highest holders</q-item-label>
+            <q-item-label>Highest holders</q-item-label>
           </q-item-section>
 </q-item>
 
@@ -225,11 +210,24 @@
           </q-item-section>
 </q-item>
 
+
+
       </q-list>
-</q-scroll-area>      
+    </q-btn-dropdown>
+
+
+
+
+
+      </q-toolbar>
+
+
+
+
+   </q-header>
 
     
-    </q-drawer>
+   
 
   
     <q-page-container>
@@ -243,8 +241,7 @@
 export default {
   data () {
     return {
-      right: false,
-      miniState: true
+      
     }
   }
 }

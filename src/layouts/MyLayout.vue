@@ -9,43 +9,48 @@
       <q-list>
         <q-item clickable v-close-popup @click="onItemClick" to="./learn-basic-level-1">
           <q-item-section>
-            <q-item-label.boid-font-sm>Basic - Level 1 (Coming Soon!)</q-item-label.boid-font-sm>
+            <q-item-label.boid-font-sm>
+              <q-rating id="stars-rating" v-model="ratingModel1" size="0.6em" color="primary" readonly max=3></q-rating>
+              Basic - Lvl 1 (Soon!)</q-item-label.boid-font-sm>
           </q-item-section>
         </q-item>
         
         <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
-            <q-item-label.boid-font-sm>Basic - Level 2 (Coming Soon!)</q-item-label.boid-font-sm>
+            <q-item-label.boid-font-sm>
+              <q-rating id="stars-rating" v-model="ratingModel2" size="0.6em" color="primary" readonly max=3></q-rating> Basic - Lvl 2 (Soon!)</q-item-label.boid-font-sm>
           </q-item-section>
         </q-item>
         
         <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
-            <q-item-label.boid-font-sm>Basic - Level 3 (Coming Soon!)</q-item-label.boid-font-sm>
+            <q-item-label.boid-font-sm>
+              <q-rating id="stars-rating" v-model="ratingModel3" size="0.6em" color="primary" readonly max=3></q-rating> Basic - Lvl 3 (Soon!)</q-item-label.boid-font-sm>
           </q-item-section>
         </q-item>
 
         <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
-            <q-item-label>Advanced - Level 1 (Coming Soon!)</q-item-label>
+            <q-item-label>
+              <q-rating id="stars-rating" v-model="ratingModel1" size="0.6em" color="green" readonly max=3></q-rating> Advanced - Lvl 1 (Soon!)</q-item-label>
           </q-item-section>
         </q-item>
 
         <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
-            <q-item-label>Advanced - Level 2 (Coming Soon!)</q-item-label>
+            <q-item-label><q-rating id="stars-rating" v-model="ratingModel2" size="0.6em" color="green" readonly max=3></q-rating> Advanced - Lvl 2 (Soon!)</q-item-label>
           </q-item-section>
         </q-item>
 
         <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
-            <q-item-label>Advanced - Level 3 (Coming Soon!)</q-item-label>
+            <q-item-label><q-rating id="stars-rating" v-model="ratingModel3" size="0.6em" color="green" readonly max=3></q-rating> Advanced - Lvl 3 (Soon!)</q-item-label>
           </q-item-section>
         </q-item>
 
         <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
-            <q-item-label>Professional - Level 1 (Coming Soon!)</q-item-label>
+            <q-item-label><q-rating id="stars-rating" v-model="ratingModel1" size="0.6em" color="gold" readonly max=3></q-rating> Pro - Lvl 1 (Soon!)</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
@@ -54,12 +59,18 @@
     <q-btn-dropdown style="overflow: auto;" color="primary" label="Specials">
       <q-list>
         <q-item clickable v-close-popup @click="onItemClick" to="./special-earthday2020">
+          <q-item-section avatar>
+            <q-icon name="img:statics/icons/earth-vector.svg"/>
+          </q-item-section>
           <q-item-section>
             <q-item-label>EarthDay2020</q-item-label>
           </q-item-section>
         </q-item>
         
         <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section avatar>
+            <q-icon name="img:statics/coming-soon.png"/>
+          </q-item-section>
           <q-item-section>
             <q-item-label>Other (Coming Soon!)</q-item-label>
           </q-item-section>
@@ -233,7 +244,9 @@
 export default {
   data () {
     return {
-      
+      ratingModel1: 1,
+      ratingModel2: 2,
+      ratingModel3: 3
     }
   }
 }

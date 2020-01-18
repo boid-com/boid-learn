@@ -2,57 +2,80 @@
   <q-layout view="hHh lpR lFr">
 
     <q-header reveal elevated class="flex flex-center column bg-primary text-white">
-      <q-toolbar class="row justify-start items-center content-center">
-                <q-btn style="overflow: auto;" color="primary" clickable @click="$router.push('./')" icon="img:statics/icons/boid-bird.svg" label="HOME"></q-btn>
+      <q-toolbar class="row justify-start items-center content-center boid-font-md">
+                <q-btn style="overflow: auto;" color="primary" clickable @click="$router.push('./')" icon="img:statics/icons/boid-bird.svg"></q-btn>
                 
     <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="primary" label="Learn">
       <q-list>
         <q-item clickable v-close-popup @click="onItemClick" to="./learn-basic-level-1">
-          <q-item-section>
-            <q-item-label.boid-font-sm>
-              <q-rating id="stars-rating" v-model="ratingModel1" size="0.6em" color="primary" readonly max=3></q-rating>
-              Basic - Lvl 1 (Soon!)</q-item-label.boid-font-sm>
+          <q-item-section avatar>
+              <q-rating id="school-rating" icon="school" v-model="ratingModel1" size="1em" color="primary" readonly max=3></q-rating>
           </q-item-section>
-        </q-item>
+          <q-item-section>
+            <q-item-label class="boid-font-menu">Basic</q-item-label>
+            <q-item-label  class="boid-font-menu" caption>Level 1 (Soon!)</q-item-label>
+          </q-item-section>
+       </q-item>
         
         <q-item clickable v-close-popup @click="onItemClick">
-          <q-item-section>
-            <q-item-label.boid-font-sm>
-              <q-rating id="stars-rating" v-model="ratingModel2" size="0.6em" color="primary" readonly max=3></q-rating> Basic - Lvl 2 (Soon!)</q-item-label.boid-font-sm>
+          <q-item-section avatar>
+              <q-rating id="school-rating" icon="school" v-model="ratingModel2" size="1em" color="primary" readonly max=3></q-rating>
           </q-item-section>
-        </q-item>
+          <q-item-section>
+            <q-item-label class="boid-font-menu">Basic</q-item-label>
+            <q-item-label class="boid-font-menu" caption>Level 2 (Soon!)</q-item-label>
+          </q-item-section>
+       </q-item>
         
-        <q-item clickable v-close-popup @click="onItemClick">
-          <q-item-section>
-            <q-item-label.boid-font-sm>
-              <q-rating id="stars-rating" v-model="ratingModel3" size="0.6em" color="primary" readonly max=3></q-rating> Basic - Lvl 3 (Soon!)</q-item-label.boid-font-sm>
+              <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section avatar>
+              <q-rating id="school-rating" icon="school" v-model="ratingModel3" size="1em" color="primary" readonly max=3></q-rating>
           </q-item-section>
-        </q-item>
+          <q-item-section>
+            <q-item-label class="boid-font-menu">Basic</q-item-label>
+            <q-item-label  class="boid-font-menu" caption>Level 3 (Soon!)</q-item-label>
+          </q-item-section>
+       </q-item>
+<q-separator spaced />
+              <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section avatar>
+              <q-rating id="school-rating" icon="school" v-model="ratingModel1" size="1em" color="green" readonly max=3></q-rating>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label class="boid-font-menu">Advanced</q-item-label>
+            <q-item-label  class="boid-font-menu" caption>Level 1 (Soon!)</q-item-label>
+          </q-item-section>
+       </q-item>
 
-        <q-item clickable v-close-popup @click="onItemClick">
-          <q-item-section>
-            <q-item-label>
-              <q-rating id="stars-rating" v-model="ratingModel1" size="0.6em" color="green" readonly max=3></q-rating> Advanced - Lvl 1 (Soon!)</q-item-label>
+ <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section avatar>
+              <q-rating id="school-rating" icon="school" v-model="ratingModel2" size="1em" color="green" readonly max=3></q-rating>
           </q-item-section>
-        </q-item>
+          <q-item-section>
+            <q-item-label class="boid-font-menu">Advanced</q-item-label>
+            <q-item-label class="boid-font-menu" caption>Level 2 (Soon!)</q-item-label>
+          </q-item-section>
+       </q-item>
 
-        <q-item clickable v-close-popup @click="onItemClick">
-          <q-item-section>
-            <q-item-label><q-rating id="stars-rating" v-model="ratingModel2" size="0.6em" color="green" readonly max=3></q-rating> Advanced - Lvl 2 (Soon!)</q-item-label>
+  <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section avatar>
+              <q-rating id="school-rating" icon="school" v-model="ratingModel3" size="1em" color="green" readonly max=3></q-rating>
           </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
-            <q-item-label><q-rating id="stars-rating" v-model="ratingModel3" size="0.6em" color="green" readonly max=3></q-rating> Advanced - Lvl 3 (Soon!)</q-item-label>
+            <q-item-label class="boid-font-menu">Advanced</q-item-label>
+            <q-item-label class="boid-font-menu" caption>Level 3 (Soon!)</q-item-label>
           </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="onItemClick">
+       </q-item>
+<q-separator spaced />
+ <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section avatar>
+              <q-rating id="school-rating" icon="school" v-model="ratingModel1" size="1em" color="red" readonly max=3></q-rating>
+          </q-item-section>
           <q-item-section>
-            <q-item-label><q-rating id="stars-rating" v-model="ratingModel1" size="0.6em" color="gold" readonly max=3></q-rating> Pro - Lvl 1 (Soon!)</q-item-label>
+            <q-item-label class="boid-font-menu">Professional</q-item-label>
+            <q-item-label class="boid-font-menu" caption>Level 1 (Soon!)</q-item-label>
           </q-item-section>
-        </q-item>
+       </q-item>
       </q-list>
     </q-btn-dropdown>
 
@@ -60,10 +83,10 @@
       <q-list>
         <q-item clickable v-close-popup @click="onItemClick" to="./special-earthday2020">
           <q-item-section avatar>
-            <q-icon name="img:statics/icons/earth-vector.svg"/>
+            <q-icon name="img:statics/earth-planet-icon.png"/>
           </q-item-section>
           <q-item-section>
-            <q-item-label>EarthDay2020</q-item-label>
+            <q-item-label class="boid-font-menu">EarthDay2020</q-item-label>
           </q-item-section>
         </q-item>
         
@@ -72,7 +95,7 @@
             <q-icon name="img:statics/coming-soon.png"/>
           </q-item-section>
           <q-item-section>
-            <q-item-label>Other (Coming Soon!)</q-item-label>
+            <q-item-label class="boid-font-menu">Other (Coming Soon!)</q-item-label>
           </q-item-section>
         </q-item>
 
@@ -90,7 +113,7 @@
 
 
 <q-footer reveal elevated class="flex flex-center column bg-primary text-white">
-  <q-toolbar class="row justify-start items-center content-center">
+  <q-toolbar class="row justify-start items-center content-center boid-font-md">
       
   <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="primary" label="SOCIAL">
       <q-list>        
@@ -99,7 +122,7 @@
             <q-icon name="img:statics/icons/handshake.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Community</q-item-label>
+            <q-item-label class="boid-font-menu">Community</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable tag="a" target="_blank" href="https://t.me/Boidcom_official">
@@ -107,7 +130,7 @@
             <q-icon name="img:statics/icons/telegram.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Telegram</q-item-label>
+            <q-item-label class="boid-font-menu">Telegram</q-item-label>
           </q-item-section>
           </q-item>
        <q-item clickable tag="a" target="_blank" href="https://discord.gg/Frm38a6">
@@ -115,7 +138,7 @@
             <q-icon name="img:statics/icons/discord.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Discord</q-item-label>
+            <q-item-label class="boid-font-menu">Discord</q-item-label>
           </q-item-section>
         </q-item>
        <q-item clickable tag="a" target="_blank" href="https://twitter.com/boidcom">
@@ -123,7 +146,7 @@
             <q-icon name="img:statics/icons/twitter.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Twitter</q-item-label>
+            <q-item-label class="boid-font-menu">Twitter</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable tag="a" target="_blank" href="https://www.facebook.com/boidcom">
@@ -131,7 +154,7 @@
             <q-icon name="img:statics/icons/facebook.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Facebook</q-item-label>
+            <q-item-label class="boid-font-menu">Facebook</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable tag="a" target="_blank" href="https://www.youtube.com/channel/UCL4I3DksM41qPKih2PbiQ7g/featured">
@@ -139,7 +162,7 @@
             <q-icon name="img:statics/icons/youtube.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Youtube</q-item-label>
+            <q-item-label class="boid-font-menu">Youtube</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
@@ -152,7 +175,7 @@
             <q-icon name="img:statics/icons/boid-bird.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>APP Web</q-item-label>
+            <q-item-label class="boid-font-menu">APP Web</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable tag="a" target="_blank" href="https://docs.boid.com">
@@ -160,7 +183,7 @@
             <q-icon name="img:statics/icons/documents.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Documentation</q-item-label>
+            <q-item-label class="boid-font-menu">Documentation</q-item-label>
           </q-item-section>
         </q-item>
       <q-item clickable tag="a" target="_blank" href="https://stats.boid.com">
@@ -168,7 +191,7 @@
             <q-icon name="img:statics/icons/stats.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Statistics</q-item-label>
+            <q-item-label class="boid-font-menu">Statistics</q-item-label>
           </q-item-section>
       </q-item>
 
@@ -183,7 +206,7 @@
             <q-icon name="img:statics/icons/github.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Github</q-item-label>
+            <q-item-label class="boid-font-menu">Github</q-item-label>
           </q-item-section>
         </q-item>
 
@@ -192,7 +215,7 @@
             <q-icon name="img:statics/icons/bloks-io-logo-vector.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Token contract</q-item-label>
+            <q-item-label class="boid-font-menu">Token contract</q-item-label>
           </q-item-section>
 </q-item>
 <q-separator spaced />
@@ -201,7 +224,7 @@
             <q-icon name="img:statics/icons/everipedia.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Everipedia</q-item-label>
+            <q-item-label class="boid-font-menu">Everipedia</q-item-label>
           </q-item-section>
 </q-item>
 
@@ -210,7 +233,7 @@
             <q-icon name="img:statics/icons/wcg-logo.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>WCG stats</q-item-label>
+            <q-item-label class="boid-font-menu">WCG stats</q-item-label>
           </q-item-section>
 </q-item>
 <q-separator spaced />
@@ -219,7 +242,7 @@
             <q-icon name="img:statics/icons/token.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Highest holders</q-item-label>
+            <q-item-label class="boid-font-menu">Highest holders</q-item-label>
           </q-item-section>
 </q-item>
 
@@ -228,7 +251,7 @@
             <q-icon name="img:statics/icons/token-more.svg" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Work fund status</q-item-label>
+            <q-item-label class="boid-font-menu">Work fund status</q-item-label>
           </q-item-section>
 </q-item>
 

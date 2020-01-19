@@ -35,8 +35,8 @@
             </div>  
             </q-tab-panel>
             <q-tab-panel class="boid-font-md" name="quiz">
-              <iframe width="650px" height= "700px"
-               src= "https://forms.office.com/Pages/ResponsePage.aspx?id=bghl7qMVVUG0PQM6HBHJMv4gVfB9Nl1ErdAbz9cp6qxUQzMwWFpIRjJSMURCSFdBNUxSREhXTjU3Ti4u&embed=true"
+               <iframe width="650px" height= "700px"
+               src= "https://forms.office.com/Pages/ResponsePage.aspx?id=bghl7qMVVUG0PQM6HBHJMv4gVfB9Nl1ErdAbz9cp6qxUMlFVNVNLU0RJVEk2U0dUNFlFN1Q4SkoyQi4u&embed=true"
                frameborder= "0" marginwidth= "0" marginheight= "0"
                style= "border: none; max-width:100%; max-height:100vh"
                allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>

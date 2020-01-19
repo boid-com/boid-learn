@@ -7,7 +7,7 @@
                 
     <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="primary" label="Learn">
       <q-list>
-        <q-item clickable v-close-popup @click="onItemClick" to="./learn-basic-level-1">
+        <q-item clickable v-close-popup @click="onItemClick" to="./learn-basic-lvl1">
           <q-item-section avatar>
               <q-rating id="school-rating" icon="school" v-model="ratingModel1" size="1em" color="primary" readonly max=3></q-rating>
           </q-item-section>
@@ -17,7 +17,7 @@
           </q-item-section>
        </q-item>
         
-        <q-item clickable v-close-popup @click="onItemClick">
+        <q-item clickable v-close-popup @click="onItemClick" to="./learn-basic-lvl2">
           <q-item-section avatar>
               <q-rating id="school-rating" icon="school" v-model="ratingModel2" size="1em" color="primary" readonly max=3></q-rating>
           </q-item-section>
@@ -81,7 +81,7 @@
 
     <q-btn-dropdown style="overflow: auto;" color="primary" label="Specials">
       <q-list>
-        <q-item clickable v-close-popup @click="onItemClick" to="./special-earthday2020">
+        <q-item clickable v-close-popup @click="onItemClick" to="./sp-earthday2020">
           <q-item-section avatar>
             <q-icon name="img:statics/earth-planet-icon.png"/>
           </q-item-section>
@@ -112,10 +112,10 @@
     </q-page-container>
 
 
-<q-footer reveal elevated class="flex flex-center column bg-primary text-white">
-  <q-toolbar class="row justify-start items-center content-center boid-font-md">
+<q-footer reveal elevated class="flex flex-center column bg-grey-8">
+  <q-toolbar class="row justify-start items-center content-center boid-font-footer">
       
-  <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="primary" label="SOCIAL">
+  <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="grey-8" label="SOCIAL">
       <q-list>        
         <q-item clickable tag="a" target="_blank" href="https://community.boid.com">
           <q-item-section avatar>
@@ -168,7 +168,7 @@
       </q-list>
   </q-btn-dropdown>
 
-  <q-btn-dropdown style="overflow: auto;" color="primary" label="LINKS">
+  <q-btn-dropdown style="overflow: auto;" color="grey-8" label="LINKS">
       <q-list>        
          <q-item clickable tag="a" target="_blank" href="https://app.boid.com">
           <q-item-section avatar>

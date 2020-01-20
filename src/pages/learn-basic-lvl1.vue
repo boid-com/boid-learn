@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex flex-center">
 
-      <div class="wrap justify-center items-top content-start" style="min-height: 800px; max-width: 800px; width: 60%; padding: 25px;">
+      <div class="wrap justify-center items-top content-start" style="min-height: 800px; max-width: 800px; width: 100%; padding: 25px;">
 
         <q-card style="padding: 25px;">
           <q-tabs v-model="tab" dense class="text-black boid-font-lg bg-grey-4" active-color="primary" indicator-color="primary" align="justify" narrow-indicator>

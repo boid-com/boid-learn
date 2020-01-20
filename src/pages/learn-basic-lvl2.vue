@@ -1,8 +1,7 @@
 <template>
   <q-page class="flex flex-center">
-
-<div id="q-app">
-  <div class="flex flex-center column">
+    <div class="row justify-center" style="width: 100%">
+      <div class="flex flex-center column">
             <div class="boid-font-lg">Please answer questions to earn some tokens!</div>
             <div class="row bg-grey-1" style="width: 90%; padding: 25px;">
               <div id="parent" class="fit column wrap justify-center items-center content-center" style="overflow: hidden;">

@@ -2,8 +2,10 @@
   <q-layout view="lHh LpR fFf">
 
     <q-header reveal elevated class="flex flex-center column bg-primary text-white">
-      <q-toolbar class="row justify-start items-center content-center boid-font-md">
+      <q-toolbar class="row justify-center items-center content-center boid-font-lg">
+      boid hub
         </q-toolbar>
+      
 
    </q-header>
 

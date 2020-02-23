@@ -17,7 +17,7 @@
     "@quasar/extras": "^1.0.0",
     "axios": "^0.18.1",
     "node-sass": "^4.13.1",
-    "quasar": "^1.0.0",
+    "quasar": "^1.9.4",
     "vue-i18n": "^8.0.0",
     "vue-markdown": "^2.2.4",
     "vuejs-localization": "^1.0.3"

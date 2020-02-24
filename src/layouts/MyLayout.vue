@@ -1,10 +1,15 @@
 <template>
   <q-layout view="lHh LpR fFf">
     <q-header reveal elevated class="flex flex-center column bg-primary text-white">
-        <q-toolbar
-        class="column justify-center items-center content-center boid-font-lg">
-          boid
+        <q-toolbar class="gt-xs column justify-center items-center content-center boid-font-xlg">
+          boid          
         </q-toolbar>
+        <q-toolbar class="xs row justify-right content-right">
+          <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="primary" icon="img:statics/icons/boid-bird.svg" label="MENU">
+          <learn-links class="bg-primary text-white" color="primary"/>
+          <specials-links class="bg-primary text-white" color="primary"/>
+                </q-btn-dropdown>
+          </q-toolbar>
     </q-header>
      <q-drawer
         v-model="drawer"
@@ -13,7 +18,7 @@
         @mouseover="miniState = false"
         @mouseout="miniState = true"
         :width="250" 
-        :breakpoint="767"    
+        :breakpoint="599"    
         content-class="bg-primary text-white boid-font-md"
       >
                   <q-scroll-area class="fit">
@@ -26,14 +31,16 @@
            @click="$router.push('./')"
            v-ripple>
          </q-btn>
-  
-          <side-menu-links/>
+          <q-list padding>
+            
+          <learn-links/>
+          <specials-links/>
+          </q-list>
           </q-scroll-area>
              </q-drawer>
     <q-page-container>
       <router-view />
     </q-page-container>
-    <mobilefooter>
     <q-footer reveal elevated class="flex flex-center column bg-grey-8 boid-font-footer">
       <q-toolbar class="row justify-start items-center content-center">
         <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="grey-8" label="SOCIAL">
@@ -44,7 +51,6 @@
         </q-btn-dropdown>
       </q-toolbar>
     </q-footer>
-    </mobilefooter>
   </q-layout>
 </template>
 <script>
@@ -53,8 +59,8 @@ export default {
   components: {
     'social-links': () => import('../components/SocialLinks'),
     'main-links': () => import('../components/MainLinks'),
-    'side-menu-links': () => import('../components/SideMenuLinks'),
-    'specials-links': () => import('../components/SpecialsLinks'),
+    'specials-links': () => import('../components/LinksSpecials'),
+    'learn-links': () => import('../components/LearnLinks'),
        },
   data () {
     return {

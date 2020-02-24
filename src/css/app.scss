@@ -5,6 +5,11 @@
   }
   
   // declare a class which applies it
+  .boid-font-xlg {
+    font-family: 'Comfortaa';
+    font-size: 28px
+  }
+
   .boid-font-lg {
     font-family: 'Comfortaa';
     font-size: 20px
@@ -37,7 +42,7 @@
     color: black
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 599px) {
     .q-footer {
       display: none;
     }

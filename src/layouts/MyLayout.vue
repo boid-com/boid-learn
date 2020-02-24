@@ -1,25 +1,22 @@
 <template>
   <q-layout view="lHh LpR fFf">
-
     <q-header reveal elevated class="flex flex-center column bg-primary text-white">
-      <q-toolbar class="row justify-center items-center content-center boid-font-lg">
-      boid
+        <q-toolbar
+        class="column justify-center items-center content-center boid-font-lg">
+          boid
         </q-toolbar>
-      
-
-   </q-header>
-
- <q-drawer
-        v-model="left"
+    </q-header>
+     <q-drawer
+        v-model="drawer"
         show-if-above
-        side="left"
         :mini="miniState"
         @mouseover="miniState = false"
         @mouseout="miniState = true"
-        :width="250"     
+        :width="250" 
+        :breakpoint="767"    
         content-class="bg-primary text-white boid-font-md"
       >
-        <q-scroll-area class="fit">
+                  <q-scroll-area class="fit">
           <q-btn
            style="overflow: auto;"
            color="primary"
@@ -28,33 +25,28 @@
            clickable
            @click="$router.push('./')"
            v-ripple>
-           </q-btn>
+         </q-btn>
+  
           <side-menu-links/>
-        </q-scroll-area>
-    </q-drawer>
-
-    
+          </q-scroll-area>
+             </q-drawer>
     <q-page-container>
       <router-view />
     </q-page-container>
-
-
-<q-footer reveal elevated class="flex flex-center column bg-grey-8 boid-font-footer">
-  <q-toolbar class="row justify-start items-center content-center">
-      
-  <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="grey-8" label="SOCIAL">
-    <social-links/>
-  </q-btn-dropdown>
-
-  <q-btn-dropdown style="overflow: auto;" color="grey-8" label="LINKS">
-     <main-links/>
-    </q-btn-dropdown>
-</q-toolbar>
+    <mobilefooter>
+    <q-footer reveal elevated class="flex flex-center column bg-grey-8 boid-font-footer">
+      <q-toolbar class="row justify-start items-center content-center">
+        <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="grey-8" label="SOCIAL">
+          <social-links/>
+        </q-btn-dropdown>
+        <q-btn-dropdown style="overflow: auto;" color="grey-8" label="LINKS">
+          <main-links/>
+        </q-btn-dropdown>
+      </q-toolbar>
     </q-footer>
-
+    </mobilefooter>
   </q-layout>
 </template>
-
 <script>
 export default {
   name: 'Links',
@@ -67,10 +59,7 @@ export default {
   data () {
     return {
       drawer: false,
-      miniState: true,
-      ratingModel1: 1,
-      ratingModel2: 2,
-      ratingModel3: 3
+      miniState: true
     }
   }
 }

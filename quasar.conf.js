@@ -8,12 +8,15 @@ module.exports = function (ctx) {
     // https://quasar.dev/quasar-cli/cli-documentation/boot-files
     boot: [
       'i18n',
-      'axios'
+      'axios',
+      'boids',
+      'p5.min'
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
     css: [
-      'app.scss'
+      'app.scss',
+      'animate.css'
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras

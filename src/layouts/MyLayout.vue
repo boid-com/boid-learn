@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh LpR fFf">
-    <q-header reveal elevated class="flex flex-center column bg-primary text-white">
+    <q-header reveal elevated class="flex flex-center column bg-primary text-white" style="background: linear-gradient(145deg, rgb(74, 94, 137) 15%, rgb(30, 75, 131) 70%);">
         <q-toolbar class="gt-xs column justify-center items-center content-center boid-font-xlg">
           boid          
         </q-toolbar>

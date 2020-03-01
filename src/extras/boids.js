@@ -1,6 +1,6 @@
 var flock
 
-function setup() {
+setup function setup() {
   frameRate(22)
 
   function populationscale() {

@@ -1,5 +1,6 @@
 <template>
   <q-layout view="lHh LpR fFf">
+    
     <q-header reveal elevated class="flex flex-center column bg-primary text-white" style="background: linear-gradient(145deg, rgb(74, 94, 137) 15%, rgb(30, 75, 131) 70%);">
         <q-toolbar class="gt-xs column justify-center items-center content-center boid-font-xlg">
           boid          
@@ -38,8 +39,10 @@
           </q-list>
           </q-scroll-area>
              </q-drawer>
-    <q-page-container>
-      <router-view />
+    <q-page-container> 
+        <div id:"boids">
+      <router-view/>
+        </div>
     </q-page-container>
     <q-footer reveal elevated class="flex flex-center column bg-grey-8 boid-font-footer">
       <q-toolbar class="row justify-start items-center content-center">
@@ -54,6 +57,8 @@
   </q-layout>
 </template>
 <script>
+const boids = require('../extras/boids.js')
+
 export default {
   name: 'Links',
   components: {
@@ -62,6 +67,9 @@ export default {
     'specials-links': () => import('../components/LinksSpecials'),
     'learn-links': () => import('../components/LearnLinks'),
        },
+  mounted () {
+    boids()
+  },
   data () {
     return {
       drawer: false,

@@ -1,10 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    <div class="animated fadeInLeft"
-         id="boids"
-         style="pointer-events: none; overflow: hidden;">
       <div class="wrap justify-center items-top content-start" style="min-height: 800px; max-width: 800px; width: 100%; padding: 25px;">
-
         <q-card style="padding: 25px;">
           <q-tabs v-model="tab" dense class="text-black boid-font-lg bg-grey-4" active-color="primary" indicator-color="primary" align="justify" narrow-indicator>
             <q-tab name="welcome" label="WELCOME" ></q-tab>
@@ -12,7 +8,6 @@
             <q-tab name="quiz" label="QUIZ" ></q-tab>
             </q-tabs >
         <q-separator ></q-separator>
-  
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="welcome">
                 <div class="boid-font-md">
@@ -25,7 +20,6 @@
                    <br>After that I'm sure you'll be ready to go through the quiz with flash speed.
                 </div>
               </q-tab-panel>
-  
             <q-tab-panel name="rules">
              <div class="boid-font-md">
                   Don't worry - if you don't answer all the questions first time, you can try again.
@@ -47,9 +41,7 @@
       </q-tab-panels>
     </q-card>
 </div>
-    </div>
-    
-  </q-page>
+</q-page>
 </template>
 
 <script>

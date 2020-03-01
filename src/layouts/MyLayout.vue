@@ -34,16 +34,17 @@
          </q-btn>
           <q-list padding>
             
-          <learn-links/>
-          <specials-links/>
+          <!-- <learn-links/>
+          <specials-links/> -->
           </q-list>
           </q-scroll-area>
              </q-drawer>
+    <div id="boids" style="width:800px; height: 800px;">
     <q-page-container> 
-        <div id:"boids">
-      <router-view/>
-        </div>
-    </q-page-container>
+          <router-view/>
+        </q-page-container>
+            </div>
+
     <q-footer reveal elevated class="flex flex-center column bg-grey-8 boid-font-footer">
       <q-toolbar class="row justify-start items-center content-center">
         <q-btn-dropdown class="q-mx-sm" style="overflow: auto;" color="grey-8" label="SOCIAL">
@@ -57,7 +58,7 @@
   </q-layout>
 </template>
 <script>
-const boids = require('../extras/boids.js')
+import boids from '../extras/boids.js'
 
 export default {
   name: 'Links',

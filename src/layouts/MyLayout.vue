@@ -34,16 +34,16 @@
          </q-btn>
           <q-list padding>
             
-          <!-- <learn-links/>
-          <specials-links/> -->
+          <learn-links/>
+          <specials-links/>
           </q-list>
           </q-scroll-area>
              </q-drawer>
-    <div id="boids" style="width:800px; height: 800px;">
+    <!-- <div id="boids" style="width:800px; height: 800px;"> -->
     <q-page-container> 
           <router-view/>
         </q-page-container>
-            </div>
+            <!-- </div> -->
 
     <q-footer reveal elevated class="flex flex-center column bg-grey-8 boid-font-footer">
       <q-toolbar class="row justify-start items-center content-center">

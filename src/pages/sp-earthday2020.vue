@@ -8,6 +8,7 @@
             <q-tab name="earthday" label="EARTH DAY" ></q-tab>
             <q-tab name="rules" label="RULES" ></q-tab>
             <q-tab name="giveaway" label="GIVEAWAY" ></q-tab>
+            <q-tab name="quiz" label="QUIZ" ></q-tab>
             </q-tabs >
         <q-separator ></q-separator>
   
@@ -33,7 +34,7 @@
                  
                  <q-item clickable v-ripple>
                   <q-item-section>
-                    <q-item-label>2. Be an active user with at least 1000 Boid power on 22nd April</q-item-label>
+                    <q-item-label>2. Be an active user with at least 1000 Boid power on 27th of April</q-item-label>
                   </q-item-section>
                  </q-item>
 
@@ -45,24 +46,24 @@
    
                 <q-item clickable v-ripple>
                   <q-item-section>
-                    <q-item-label >4. Fill the quiz and answer at least 15 out of 20 questions properly (questions regarding shared articles about environmental issues, research, etc.)</q-item-label>
+                    <q-item-label >4. Fill the quiz and answer at least 15 out of 20 questions properly (questions about environmental issues, research, etc.)</q-item-label>
                   </q-item-section>
                 </q-item>
             
                <q-item clickable v-ripple>
                 <q-item-section>
-                  <q-item-label >5. Make a comment about Boid on twitter in a certain format with <b>#boid</b> within a week of 22nd of April 2020.</q-item-label>
+                  <q-item-label >5. Make a comment about Boid on twitter and Discussions.app with <b>#boid</b> within 22-27 April 2020.</q-item-label>
                 </q-item-section>
                </q-item>
                 
                 <q-item clickable v-ripple>
                   <q-item-section>
-                    <q-item-label >6. Make a comment about Earth Day on twitter in a certain format with <b>#earthday2020</b> within a week of 22nd of April 2020.</q-item-label>
+                    <q-item-label >6. Make a comment about Earth Day on twitter and Discussions.app with <b>#earthday2020</b> within 22-27 April 2020.</q-item-label>
                   </q-item-section>
                 </q-item>
           </div>
           
-           <br>Random Boid users will be chosen from participants. The lottery will be done on 22nd of April 2020 at 18:00 GMT.
+           <br>Random Boid users will be chosen from participants. The lottery will be done on 27th of April 2020 18:00 GMT.
            <br>Then after verification all the funds will be transferred to the winners.
       </div>
       </q-tab-panel>
@@ -85,6 +86,12 @@
                   <p>Organizers will not be able to be a part of the Boid Yearly Special.</p>
               </div>
            </q-tab-panel>
+
+           <q-tab-panel name="quiz">
+                <div class="boid-font-md">
+                                     
+                </div>
+              </q-tab-panel>
           
       </q-tab-panels>
     </q-card>

@@ -89,9 +89,18 @@
 
            <q-tab-panel name="quiz">
                 <div class="boid-font-md">
-                                     
+                  Fill the form in this window or just follow the link <a href="https://forms.gle/3N8GHYhJsGqyDyxc9" target="_blank">HERE</a><p></p>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScl1V3ST5YPaVc6OXE-eirrHTsezYRkL6ov8gjArPQYJyLNBg/viewform?embedded=true"
+                    width="650px"
+                    height="700px"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    style= "border: none; max-width:100%; max-height:100vh"
+                    allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen>Loading…
+                    </iframe>           
                 </div>
-              </q-tab-panel>
+            </q-tab-panel>
           
       </q-tab-panels>
     </q-card>

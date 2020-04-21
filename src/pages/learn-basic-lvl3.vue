@@ -13,8 +13,8 @@
                 <div class="boid-font-md">
                   <img src="../statics/boid-header.png" style="width: 100%;">
                    <br><b>Thank you for joining Boid!</b>
-                   <br>Hope you already went through Basic Level 1
-                   <br>This time you can get 10000 BOID tokens.
+                   <br>Hope you already went through Basic Level 1 & 2
+                   <br>This time you can get 15000 BOID tokens.
                    <br>The only thing that you have to do is do a little research and answer all questions properly.
                    <br>We encourage you to read the Boid whitepaper: <a href="https://www.boid.com/statics/Boid-WhitePaper-v2.pdf" target="_blank">HERE</a>
                    <br>After that I'm sure you'll be ready to go through the quiz with flash speed.
@@ -32,8 +32,8 @@
             </div>  
             </q-tab-panel>
             <q-tab-panel class="boid-font-md" name="quiz">
-              Fill the form in this window or just follow the link <a href="https://forms.gle/EJuZTvKVaNeHThjJA" target="_blank">HERE</a><p></p>
-               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5m1C1V01ioy_TaSSNuaXWZ4Hj3Z9_7Ww4A_izD9-6IqhuBQ/viewform?embedded=true"
+              Fill the form in this window or just follow the link <a href="https://forms.gle/CvPsK7jPUz7aJW1R8" target="_blank">HERE</a><p></p>
+               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdu7IbLhs78jm7uxRYHvcKqnFHTgKTbOTihKqJ3eHPGHbBVug/viewform?embedded=true"
                width="650px"
                height="700px"
                frameborder="0"

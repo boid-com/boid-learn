@@ -14,9 +14,10 @@
                   <img src="../statics/boid-header.png" style="width: 100%;">
                    <br><b>Thank you for joining Boid!</b>
                    <br>This is your first step to learn more things about this project!
-                   <br>To encourage you we prepared a quiz where you can get 1000 BOID tokens.
+                   <br>To encourage you we prepared a quiz where you can get 5000 BOID tokens.
                    <br>The only thing that you have to do is do a little research and answer all questions properly.
                    <br>To start please check <a href="https://boid.com" target="_blank">boid.com</a> website and read what is Boid all about.
+                   <br>We encourage you to read the Boid whitepaper: <a href="https://www.boid.com/statics/Boid-WhitePaper-v2.pdf" target="_blank">HERE</a>
                    <br>After that I'm sure you'll be ready to go through the quiz with flash speed.
                 </div>
               </q-tab-panel>
@@ -27,15 +28,21 @@
                   <ul>
                   <li>Only users with at least 250 Boid Power can be rewarded for this quiz.</li>
                   <li>Only 100% accurate answers get you the reward.</li>
+                  <li>You can get rewarded only once for this quiz!</li>
                   </ul>
             </div>  
             </q-tab-panel>
             <q-tab-panel class="boid-font-md" name="quiz">
-               <iframe width="650px" height= "700px"
-               src= "https://forms.office.com/Pages/ResponsePage.aspx?id=bghl7qMVVUG0PQM6HBHJMv4gVfB9Nl1ErdAbz9cp6qxUMlFVNVNLU0RJVEk2U0dUNFlFN1Q4SkoyQi4u&embed=true"
-               frameborder= "0" marginwidth= "0" marginheight= "0"
+              Fill the form in this window or just follow the link <a href="https://forms.gle/sWoes1ZZpTWUwzqt5" target="_blank">HERE</a><p></p>
+               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc0HrUZiqWiu2TNQYe7u_kpsjEOa4j589XrKl6YpNAN4vyBlQ/viewform?embedded=true"
+               width="650px"
+               height="700px"
+               frameborder="0"
+               marginheight="0"
+               marginwidth="0"
                style= "border: none; max-width:100%; max-height:100vh"
-               allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+               allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen>Loading…
+               </iframe>
            </q-tab-panel>
           
       </q-tab-panels>

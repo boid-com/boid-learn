@@ -2,6 +2,7 @@ const routes = [
   {path: "/", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/Index.vue") }]},
   {path: "/learn-basic-lvl1", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/learn-basic-lvl1.vue") }]},
   {path: "/learn-basic-lvl2", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/learn-basic-lvl2.vue") }]},
+  {path: "/learn-basic-lvl3", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/learn-basic-lvl3.vue") }]},
   {path: "/sp-earthday2020", component: () => import("layouts/MyLayout.vue"), children: [{ path: "", component: () => import("pages/sp-earthday2020.vue") }]}
 ];
 

@@ -12,7 +12,7 @@
           </q-item-section>
           <q-item-section>
             <q-item-label class="boid-font-menu">Basic</q-item-label>
-            <q-item-label  class="boid-font-menu" caption>Level 1 (Soon!)</q-item-label>
+            <q-item-label  class="boid-font-menu" caption>Level 1</q-item-label>
           </q-item-section>
        </q-item>
         
@@ -22,17 +22,17 @@
           </q-item-section>
           <q-item-section>
             <q-item-label class="boid-font-menu">Basic</q-item-label>
-            <q-item-label class="boid-font-menu" caption>Level 2 (Soon!)</q-item-label>
+            <q-item-label class="boid-font-menu" caption>Level 2</q-item-label>
           </q-item-section>
        </q-item>
         
-              <q-item clickable v-close-popup @click="onItemClick">
+              <q-item clickable v-close-popup @click="onItemClick" to="./learn-basic-lvl3">
           <q-item-section avatar>
               <q-rating id="school-rating" icon="school" v-model="ratingModel3" size="1em" color="white" readonly max=3></q-rating>
           </q-item-section>
           <q-item-section>
             <q-item-label class="boid-font-menu">Basic</q-item-label>
-            <q-item-label  class="boid-font-menu" caption>Level 3 (Soon!)</q-item-label>
+            <q-item-label  class="boid-font-menu" caption>Level 3</q-item-label>
           </q-item-section>
        </q-item>
 <q-separator spaced />
